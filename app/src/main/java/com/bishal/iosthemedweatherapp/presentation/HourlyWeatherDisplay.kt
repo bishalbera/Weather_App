@@ -55,7 +55,7 @@ fun HourlyWeatherDisplay(
         Column(
                 modifier = modifier,
                 horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.SpaceBetween
+                verticalArrangement = Arrangement.SpaceEvenly
         ) {
             Text(
                 text = formattedTime,
@@ -68,7 +68,7 @@ fun HourlyWeatherDisplay(
             )
             Text(
                 text = "${weatherData.temperatureCelsius}°C",
-                color = Color.Black,
+                color = Color.White,
                 fontWeight = FontWeight.Thin
             )
         }
